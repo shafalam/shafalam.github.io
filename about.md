@@ -4,11 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My name is Shafi. I from Bangladesh. Currently living in Mannheim, Germany.
+
+Interest: Reading books, travelling and spending time with friends and family.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+My development stack:
+Backend: Java + Spring-boot &
+Frontend: TypeScript + React
 
 ### Contact me
 

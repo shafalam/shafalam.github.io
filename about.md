@@ -10,9 +10,13 @@ Interest: Reading books, travelling and spending time with friends and family.
 
 ### More Information
 
-My development stack:
+My development stack:  
 Backend: Java + Spring-boot &
 Frontend: TypeScript + React
+
+Projects:  
+Tic-tac-toe: [Play Online](https://shafalam.github.io/tic-tac-toe)  
+Tasks: [Try here](https://shafalam.github.io/tasks)
 
 ### Contact me
 

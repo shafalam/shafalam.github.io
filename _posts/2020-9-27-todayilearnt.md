@@ -25,3 +25,17 @@ So, whenever I was trying to query like this way: `document.querySelector('["row
 
 I needed to escape the ":" twice. Once for the javascript itself and another for the css.
 So, I ended up writing this way `document.querySelector('["row\\:id"]')`. This time it worked. :D
+
+## 07.12.2020
+
+### The problem:
+
+I needed a data structure that can identify duplicate while inserting and can be retrieved by using an index.
+
+### The solution:
+
+First issue can be solved by using HashSet. I was aware of that. I just didn't know that HashSet can be converted into an `Object[]` array. Like this:
+`Object[] array = set.toArray()`
+
+After that, I can retrieve any value by simply indexing and casting to a data type. i.e.
+`int val = (int) array[i]`

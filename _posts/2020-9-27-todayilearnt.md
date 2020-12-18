@@ -25,3 +25,16 @@ So, whenever I was trying to query like this way: `document.querySelector('["row
 
 I needed to escape the ":" twice. Once for the javascript itself and another for the css.
 So, I ended up writing this way `document.querySelector('["row\\:id"]')`. This time it worked. :D
+
+### The problem:
+
+Suppose you have two strings `s1 = watercooler` and `s2 = ercoolerwat`. Determine `s2` is a rotated array of `s1`. You can only use `isSubstring()` method only once.
+This constraint makes this problem a bit difficult to solve.
+
+### The solution:
+
+We can always divide a string into x and y. Like `s1 = x + y`. In this case, `x = wat` and `y = cooler`.
+For s2 it becomes `s2 = y + x`.
+
+Now, what if we concatenate the `s1` twice. `s1s1 = x + y + x + y = x + s2 + y`
+Now we can use `isSubtring` only once and get our desired result.

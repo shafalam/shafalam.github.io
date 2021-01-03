@@ -54,3 +54,15 @@ For s2 it becomes `s2 = y + x`.
 
 Now, what if we concatenate the `s1` twice. `s1s1 = x + y + x + y = x + s2 + y`
 Now we can use `isSubtring` only once and get our desired result.
+
+## 03.01.2021
+
+### The problem:
+
+`5/2` returns 2.0
+I expected 2.5.
+
+### Solution:
+
+`(double)5 / 2` returns 2.5
+Reason is: When java performs division, it assumes 5 as int and divides accordingly. So, we need to tell java that in this case 5 is not int rather double and divide it accordingly.

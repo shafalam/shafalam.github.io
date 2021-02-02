@@ -66,3 +66,15 @@ I expected 2.5.
 
 `(double)5 / 2` returns 2.5
 Reason is: When java performs division, it assumes 5 as int and divides accordingly. So, we need to tell java that in this case 5 is not int rather double and divide it accordingly.
+
+### Problem:
+
+Oftentimes, I have to disregard all non-letters in a sentence. I used to create a hashset containing all the punctuations. Then while traversing through the string, I would check in the hashset.
+Which is inefficient.
+
+### Better Way:
+
+Replace all the non-letter characters with spaces. Then while traversing only look for the space.
+E.g.: `"this is a very short sentence! I wonder, why?".replaceAll("[^a-zA-Z0-9]", " ");`
+
+Here we are using a regex which simply looks for everything except a-z, A-Z and 0-9.

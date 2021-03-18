@@ -79,7 +79,7 @@ E.g.: `"this is a very short sentence! I wonder, why?".replaceAll("[^a-zA-Z0-9]"
 
 Here we are using a regex which simply looks for everything except a-z, A-Z and 0-9.
 
-## 14.02.2021
+## 14.03.2021
 
 ### Problem: Converting an arryList of integer array to a 2D int array.
 
@@ -89,3 +89,9 @@ Here we are using a regex which simply looks for everything except a-z, A-Z and 
     List<int[]> list = new ArrayList<int[]>();
     int[][] arr = list.toArray(new int[list.size()][list.get(0).length]);
 ```
+
+## 17.03.2021
+
+### Problem: When you want to use wildcard matching but don't want to go through the complexities of regex, what can you do?
+
+### Solution: You can use glob pattern. It's not as powerful or flexible as RegEx, however, it's quite simple to use. In many cases it's good enough for wildcard searching. E.g. `src/*.js` will find all the javascript files inside the src directory.

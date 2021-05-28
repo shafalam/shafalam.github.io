@@ -95,3 +95,19 @@ Here we are using a regex which simply looks for everything except a-z, A-Z and 
 ### Problem: When you want to use wildcard matching but don't want to go through the complexities of regex, what can you do?
 
 ### Solution: You can use glob pattern. It's not as powerful or flexible as RegEx, however, it's quite simple to use. In many cases it's good enough for wildcard searching. E.g. `src/*.js` will find all the javascript files inside the src directory.
+
+## 28.05.2021  
+
+### Problem: What is a reducer?
+
+### Solution: By the name of the function it seems like, this reducer function takes a bunch of data and by some rule, it reduces those input data and return them. 
+
+This is the case in reality. Let's take real example from redux. In redux we can create a `reducer` function that takes two arguments: `state` and `action`. `state` is the input data and and `action`
+tells the function what kind of modification it should perform on the `state`. E.g.:
+```
+const reducer = (state, action) => {
+    if(action.type === 'Increase') return state.time + 1
+    else if(action.type === 'Decrease') return state.time - 1
+    else return state.time
+}
+```

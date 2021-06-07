@@ -38,3 +38,16 @@ Character.isLetter('a')
         }
     };
 ```
+
+### Things to remember while implementing a custom comparator
+Giver two data x and y
+0: if (x==y)
+-1: if (x < y)
+1: if (x > y)
+
+
+### string.split() function can take second parameter 
+`String[] word = "function can take second parameter".split(" ",2);`
+`word` will have `["function","can take second parameter"]`
+
+### string.trim() will remove empty space from corner
